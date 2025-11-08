@@ -1,0 +1,228 @@
+🌐 Prompt: Build “CULTURA” – The Virtual Art & Heritage Network
+
+Goal:
+Create a fully functional and visually attractive culture-themed website that connects artists, organizations, and art lovers (users). The theme must reflect art, culture, and museum elegance — using rich visuals, smooth animations, and warm color tones (deep gold, navy, and ivory). Every button and action should work interactively.
+
+🎨 Website Overview
+
+CULTURA is a digital art ecosystem — a mix of LinkedIn + Virtual Museum + Art Gallery — allowing artists to showcase works, users to explore and rate them, and organizations to connect with creators.
+
+🧭 Pages & Features
+1️⃣ Landing / Home Page
+
+Visually stunning cultural homepage (blend of artistic backgrounds, parchment texture, and museum-like layout).
+
+Sections:
+
+Hero banner: “Preserving Art & Culture Digitally.”
+
+Buttons: “Join as Artist,” “Join as User,” “Join as Organization.”
+
+Featured artworks carousel and trending artists section.
+
+About CULTURA + mission statement.
+
+Footer: contact, FAQs, social links.
+
+Smooth scroll animations, hover effects on images, and parallax art background.
+
+2️⃣ Login/Signup Pages
+
+Separate login & signup pages for:
+
+Artists
+
+Fields: Name, Email, Password, Art Category, Bio, Portfolio link.
+
+Users
+
+Fields: Name, Email, Password, Interests (Art, Coins, Heritage, etc.).
+
+Organizations
+
+Fields: Organization Name, Email, Password, Industry Type, Description.
+
+Each login directs to its own dashboard (role-based routing).
+
+Authentication: Firebase Auth or Node.js JWT.
+Password recovery & email verification included.
+
+3️⃣ Artist Dashboard & Features
+
+Upload Page:
+
+Upload artworks (image/video/3D model).
+
+Add title, description, category, tags, and artwork status: Available, Reserved, Sold.
+
+Auto-preview of uploaded content.
+
+Manage Works:
+
+View all uploaded works in gallery format.
+
+Edit or delete works.
+
+Track likes, comments, ratings, and total views.
+
+Interaction Page:
+
+View user comments, organization requests, and engagement analytics.
+
+Profile & Portfolio:
+
+Artist bio, profile image, social links.
+
+Verified badge (after recognition by organization).
+
+Display of all artworks, recognitions, and achievements.
+
+Contact button for direct communication.
+
+Organization Requests:
+
+List of collaboration offers or custom art requests.
+
+Accept/decline option with response message.
+
+4️⃣ User Dashboard & Features
+
+Explore Page:
+
+Grid of all artworks (filter by category, status, artist name).
+
+Each artwork card shows title, creator, and view count.
+
+Artwork Details Page:
+
+Large artwork view with title, description, tags, and artist info.
+
+Buttons for Like ❤️, Comment 💬, Rate ⭐, and Share 🔗.
+
+Real-time comment system and rating updates.
+
+Artwork status indicator (Available, Reserved, Sold).
+
+User Profile:
+
+Saved artworks, liked history, and personal info.
+
+Search Bar & Filters:
+
+Search by artwork name, artist, or category.
+
+5️⃣ Organization Dashboard & Features
+
+Organization Home:
+
+View trending artists, categories, and top-rated artworks.
+
+Art Request Page:
+
+Post requests for specific art themes or projects (e.g., “We need mural artists for cultural event”).
+
+View artist responses and shortlist.
+
+Artist Directory:
+
+Browse artist profiles, portfolio previews, and contact directly.
+
+Recognition feature → “Recognize Artist” (adds badge to artist profile).
+
+Analytics:
+
+See popular artworks and engagement stats.
+
+Organization Profile:
+
+Logo, about section, recognized artists list, contact details.
+
+6️⃣ Query Page (Common for All Roles)
+
+Dedicated “Ask Your Query” page:
+
+Input fields: Name, Role (Artist/User/Org), Email, Query.
+
+Queries get stored in the database and displayed in the admin panel.
+
+Auto-response system: “We’ll get back to you soon.”
+
+7️⃣ Admin Panel (Optional Enhancement)
+
+Manage all users, artworks, and queries.
+
+Approve or flag inappropriate content.
+
+Dashboard with charts for site analytics (using Chart.js or Recharts).
+
+💎 Additional Functional Features
+
+Role-based Authentication – Different dashboards and privileges.
+
+Real-time Database Updates – Using Firebase or MongoDB.
+
+Interactive Animations – Framer Motion or AOS for fade/slide transitions.
+
+Notifications Panel – For likes, comments, and collaboration offers.
+
+Responsive Design – Works perfectly on mobile, tablet, and desktop.
+
+Search & Filter System – By artist, artwork, or recognition.
+
+Art Status Tags – Auto-updated with color codes (Green – Available, Yellow – Reserved, Red – Sold).
+
+Contact Integration – Direct message form between artist and organization.
+
+Dark Mode – Toggle between light/dark art gallery themes.
+
+🎨 Design & Theme Guidelines
+Element	Description
+Color Palette	Deep Navy #1B1F3B, Gold #C6A664, Ivory #F7F4E9, Accent Teal #70A8A8
+Font Family	Title: Playfair Display / Cinzel Decorative, Text: Poppins / Inter
+Style	Museum-inspired elegance, framed artworks, soft shadows, minimal borders
+Layout	Grid-based, rounded corners, card hover zoom, background parallax
+Illustrations	Cultural patterns, artistic icons, brush textures
+Animations	Smooth transitions, hover glow for artworks, fading text
+⚙️ Tech Stack
+Layer	Tools
+Frontend	React.js or Next.js + Tailwind CSS + Framer Motion
+Backend	Node.js + Express.js
+Database	MongoDB (Mongoose) or Firebase Firestore
+Storage	Firebase Storage or AWS S3 for artwork files
+Auth	Firebase Authentication / JWT
+Deployment	Vercel (frontend), Render/Netlify (backend)
+Analytics	Recharts / Chart.js for insights
+3D Galleries	Three.js or React-Three-Fiber (optional)
+🧠 Smart Add-ons (Optional but Innovative)
+
+AI Art Categorizer: Auto-detects artwork type from uploaded image.
+
+Cultura Coins: Users earn points for engagement, redeemable for rewards.
+
+Virtual Exhibition Mode: 3D environment to showcase artworks in a digital gallery.
+
+Heatmap Analytics: Tracks user engagement and popular artworks visually.
+
+🖋️ Tagline Suggestions
+
+“Where Art Meets Recognition.”
+
+“The Digital Museum of Tomorrow.”
+
+“Bridging Artists, Organizations, and Admirers.”
+
+“Cultura – Preserving Heritage Beyond Time.”
+
+💡 Expected Outcome
+
+A fully functional, culture-themed web platform where:
+
+Artists can upload, showcase, and get recognized.
+
+Users can explore, like, rate, and comment on artworks.
+
+Organizations can post requests, recognize talent, and collaborate.
+
+Queries, analytics, and notifications work seamlessly.
+
+Every button, upload, and interaction should work dynamically and update the database in real time.
