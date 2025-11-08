@@ -1,129 +1,141 @@
 # CULTURA Design Guidelines
 
-## Design Approach: Museum-Inspired Cultural Excellence
+## Design Approach: Museum-Quality Digital Experience
 
-This platform blends the elegance of a virtual museum with the interactivity of a social network. Drawing inspiration from prestigious cultural institutions like The Met, Louvre digital experiences, and modern art platforms like Artsy and Saatchi Art, while maintaining the professional polish of LinkedIn.
+Drawing inspiration from prestigious cultural institutions (The Met, Louvre digital platforms, Artsy, Saatchi Art) combined with the professional polish of LinkedIn. Every interaction should evoke the refined experience of curating and viewing art in an elegant gallery.
 
-**Core Principle**: Every interaction should feel like curating and experiencing art in a prestigious gallery—refined, intentional, and visually rich.
-
-## Color Palette
-
-- **Primary Navy**: #1B1F3B (backgrounds, headers, primary text)
-- **Accent Gold**: #C6A664 (CTAs, highlights, borders, badges)
-- **Ivory Base**: #F7F4E9 (main backgrounds, cards, light sections)
-- **Accent Teal**: #70A8A8 (secondary actions, links, status indicators)
-- **Status Colors**: Green (#4CAF50) for Available, Amber (#FFA726) for Reserved, Red (#EF5350) for Sold
+**Core Principle**: Sophistication through restraint. Visual richness without overwhelming. Let the artwork be the hero.
 
 ## Typography System
 
-**Display/Headings**: Playfair Display (serif, elegant)
-- Hero titles: 4xl-6xl, font-weight 700
-- Section headers: 3xl-4xl, font-weight 600
-- Card titles: xl-2xl, font-weight 600
+**Playfair Display (Headings)** - Elegant serif
+- Hero titles: 3xl-6xl, weight-700
+- Section headers: 2xl-4xl, weight-600  
+- Card titles: xl-2xl, weight-600
 
-**Body/Interface**: Poppins (clean, readable)
-- Body text: base-lg, font-weight 400
-- Labels: sm-base, font-weight 500
-- Buttons: base, font-weight 600
+**Poppins (Body/UI)** - Clean sans-serif
+- Body text: base-lg, weight-400
+- Labels/metadata: sm-base, weight-500
+- Buttons: base, weight-600
 
 ## Layout System
 
-**Spacing Scale**: Use Tailwind units of 4, 6, 8, 12, 16, 20, 24 for consistent rhythm
-- Section padding: py-16 to py-24 (desktop), py-12 to py-16 (mobile)
-- Card padding: p-6 to p-8
-- Element gaps: gap-4 to gap-8
+**Spacing Units**: 4, 6, 8, 12, 16, 20, 24 (Tailwind scale)
+- Sections: py-20 to py-24 (desktop), py-12 (mobile)
+- Cards: p-6 to p-8
+- Component gaps: gap-6 to gap-8
 
 **Grid Patterns**:
-- Artwork galleries: 3-column on desktop (grid-cols-3), 2-column tablet (md:grid-cols-2), single mobile
-- Featured sections: 4-column stats/metrics (grid-cols-4)
-- Dashboard layouts: Sidebar navigation + main content area
+- Artwork galleries: 3-col desktop → 2-col tablet → 1-col mobile
+- Stats/metrics: 4-col grid (grid-cols-4)
+- Dashboard: Fixed sidebar (256px) + fluid content area
 
 ## Component Library
 
-### Landing Page Components
-1. **Hero Section** (80vh): Full-width background with cultural pattern overlay, centered headline with gold accent underline, three role-specific CTA buttons (Artist/User/Organization) with gold borders
-2. **Featured Artworks Carousel**: Auto-rotating showcase with 5-6 artworks, navigation dots, smooth fade transitions
-3. **Trending Artists Grid**: 3-column cards with circular profile images, artist name in Playfair, follower count, hover lift effect
-4. **Mission Statement**: Split layout with cultural imagery left, text content right, framed with subtle gold border
-5. **Footer**: Dark navy background, 4-column layout (About, Quick Links, Contact, Social), gold divider lines
+### Landing Page Structure (6-8 Sections)
 
-### Navigation
-- **Main Nav**: Sticky header with logo left, menu items center, profile/dashboard right
-- **Dashboard Sidebar**: Fixed left sidebar (256px) with role-specific menu items, gold active state indicator
-- **Breadcrumbs**: On detail pages showing navigation path
+**Hero** (90vh): Large museum interior image with 50% dark gradient overlay, centered headline with gold accent underline, three glass-morphic CTA buttons (Artist/Collector/Organization) with blurred backgrounds
 
-### Artwork Cards
-- **Gallery Card**: Framed image with 8px ivory border, subtle shadow, title overlay on hover with dark gradient, status badge top-right corner
-- **Detail View**: Large centered image (max 70vh), metadata sidebar with artist info, engagement buttons (Like/Comment/Rate), description below
-- **Upload Preview**: Dotted border upload zone, drag-drop indicator, thumbnail preview grid
+**Featured Artworks**: Auto-rotating carousel, 5 artworks, smooth fade transitions (500ms), navigation dots in gold
+
+**Trending Artists**: 3-column grid, circular profile images (128px), Playfair names, follower counts, subtle hover lift (translateY -4px)
+
+**Platform Benefits**: 2-column split with cultural pattern image left, benefit list with gold bullet points right
+
+**Mission Statement**: Centered max-width prose (max-w-3xl), framed with subtle gold border-top/bottom
+
+**Recognition Showcase**: 4-column grid of artist achievements with gold badge icons
+
+**Footer**: Navy background, 4-column layout (About/Resources/Community/Legal), gold horizontal divider, social icons in teal
+
+### Navigation Components
+
+**Main Header**: Sticky, logo left (Playfair Display), center menu items (Explore/Artists/Organizations), profile dropdown right with avatar
+
+**Dashboard Sidebar**: Fixed left (256px), role-specific menu with icons (Heroicons outline), gold left-border on active state, collapsible on tablet
+
+**Breadcrumbs**: On detail pages, navy text with gold separators
+
+### Artwork Display Cards
+
+**Gallery Card**: Image with 6px ivory border creating frame effect, subtle shadow (shadow-md), dark gradient overlay on hover revealing title/artist in white Playfair, status badge (Available/Reserved/Sold) top-right corner
+
+**Detail View**: Large centered image (max 65vh), metadata sidebar with artist card, engagement row (Like/Comment/Rate icons in gold), description in prose width below
+
+**Upload Interface**: Dotted gold border drop zone, cultural icon placeholder, grid preview of uploaded images
 
 ### Forms & Inputs
-- **Text Inputs**: Ivory background, navy border, gold focus ring, rounded corners (6px)
-- **Buttons**: 
-  - Primary: Gold background (#C6A664), navy text, hover darkens
-  - Secondary: Navy outline, transparent bg, gold text on hover
-  - Tertiary: Teal for auxiliary actions
-- **Dropdowns**: Custom styled with gold accent on selected items
-- **File Upload**: Large drop zone with cultural icon, progress bar in gold
+
+**Text Fields**: Ivory background, 1px navy border, gold focus ring (ring-2), rounded-md corners
+**Primary Buttons**: Gold background, navy text, slight gold glow on hover (shadow-lg shadow-gold/20)
+**Secondary Buttons**: Navy outline, transparent background, fills with navy on hover
+**Tertiary Actions**: Teal text, underline on hover
+**File Upload**: Large drop zone with damask pattern background (5% opacity), progress bar in gold
 
 ### Dashboard Widgets
-- **Stats Cards**: White cards with gold accent border-left, large numbers in Playfair, icon in teal
-- **Activity Feed**: Timeline layout with circular avatars, gold connector line, card-based entries
-- **Request Cards** (Organization): Elevated cards with project details, artist response count, accept/decline buttons
+
+**Stats Cards**: White with gold left-border (border-l-4), large Playfair numbers, teal icons, descriptive label below
+
+**Activity Timeline**: Vertical line connector in gold, circular user avatars, card-based activity items with timestamps
+
+**Request Manager** (Organizations): Elevated cards with project thumbnail, title in Playfair, artist response count badge, dual action buttons
 
 ### Interactive Elements
-- **Rating Stars**: Outlined stars, fill with gold on selection, half-star support
-- **Comment Threads**: Nested layout with connecting lines, user avatars, timestamp in light text
-- **Status Badges**: Pill-shaped, colored background with white text, uppercase small font
-- **Recognition Badge**: Gold trophy/medal icon with "Recognized" text on artist profiles
 
-### Gallery Displays
-- **Masonry Grid**: Variable height artwork cards creating dynamic layout (on User Explore page)
-- **Portfolio View**: Full-width rows with alternating image-left/right layouts showcasing artist work
-- **Carousel**: Smooth horizontal scroll with navigation arrows, snap-to-center
+**Rating System**: Gold outlined stars, fill animation on selection (300ms)
+**Comment Threads**: Nested indent with subtle connecting lines, circular avatars, timestamps in muted text
+**Status Badges**: Pill shape, colored backgrounds (Available: green-500, Reserved: amber-500, Sold: red-500), white uppercase text
+**Recognition Badge**: Gold trophy icon with "Recognized Artist" text on profiles
+**Like Button**: Heart icon, fills with gold animation, count appears
 
-## Animations & Interactions
+### Gallery Layouts
 
-**Subtle & Purposeful** (using Framer Motion):
-- Page transitions: Fade in with slight upward slide (200ms)
-- Card hover: Lift effect (translateY -4px) with shadow increase
-- Image load: Fade in from placeholder
-- Parallax: Hero background moves at 0.5x scroll speed
-- Button hover: Gold glow effect (box-shadow spread)
-- Carousel: Smooth slide transitions (400ms ease-in-out)
+**Masonry Grid** (Explore): Variable height cards creating dynamic staggered layout
+**Portfolio View**: Full-width alternating rows, image left/right pattern
+**Carousel**: Horizontal scroll with snap-to-center, navigation arrows in gold circles
 
-**NO** excessive scroll-triggered animations—maintain elegance and performance.
+## Animations & Micro-interactions
 
-## Images & Visual Assets
+Use Framer Motion sparingly for premium feel:
+- Page transitions: Fade in + slide up 20px (250ms)
+- Card hover: Lift 4px with shadow increase
+- Image loading: Fade from ivory placeholder
+- Button press: Scale down to 0.98
+- Parallax hero: Background moves at 0.6x scroll speed
+- Carousel transitions: Smooth slide (450ms ease-in-out)
 
-**Hero Section**: Large panoramic cultural imagery—museum interior, art gallery, or abstract cultural patterns with 40% dark overlay for text contrast
+**No** scroll-triggered animations beyond parallax—maintain performance and elegance.
 
-**Artist Profiles**: Circular cropped profile photos (128px diameter)
+## Images & Visual Strategy
 
-**Artwork Images**: Primary content—high-quality uploads displayed in 16:9 or 4:3 aspect ratios, framed presentation
+**Hero Image**: High-quality museum interior, art gallery corridor, or abstract cultural installation. Must be panoramic (21:9 ratio), professional photography with proper lighting. Apply 50% dark overlay for text readability.
 
-**Organization Logos**: Square format (64px), displayed in ivory circles
+**Artist Avatars**: Circular crops (128px for profiles, 48px for cards), professional headshots preferred
 
-**Background Patterns**: Subtle cultural motifs (damask, art deco patterns) at 5% opacity on ivory sections
+**Artwork Images**: The primary content—support multiple aspect ratios (16:9, 4:3, 1:1), framed presentation with ivory borders
 
-**Icons**: Use Heroicons (outline style) for UI elements—24px standard size, gold color for primary actions
+**Background Patterns**: Subtle damask or art deco patterns at 5-8% opacity on ivory sections, never competing with content
 
-## Responsive Behavior
+**Organization Logos**: Square format in ivory circular containers (64px)
 
-**Desktop (1280px+)**: Full sidebar, 3-column grids, large hero imagery
-**Tablet (768-1279px)**: Collapsible sidebar, 2-column grids, reduced padding
-**Mobile (<768px)**: Bottom nav bar, single column, stacked layouts, full-width cards
+**Cultural Illustrations**: Use on empty states, onboarding flows, and query page sidebars—elegant line art style
 
-## Page-Specific Guidelines
+**Icons**: Heroicons (outline variant), 24px standard, gold for primary actions, navy for secondary
 
-**Landing**: Multi-section scrolling experience with 6-8 sections, generous whitespace, impactful visuals at each section break
+## Responsive Strategy
 
-**Artist Dashboard**: Left sidebar nav, main content area with upload zone prominent, recent works grid below, analytics cards in 4-column layout
+**Desktop (1280px+)**: Full sidebar, 3-column grids, expansive hero
+**Tablet (768-1279px)**: Collapsible sidebar, 2-column grids, py-16 sections
+**Mobile (<768px)**: Bottom nav, single column, py-12 sections, full-width cards
 
-**Artwork Detail**: Centered layout with max-width container (1024px), large image hero, two-column layout for metadata + interactions below
+## Page-Specific Patterns
 
-**Explore Page**: Filter sidebar left (256px), gallery grid right taking remaining space, sticky filter headers
+**Landing**: Generous whitespace between sections, each section tells complete story, impactful imagery breaks
 
-**Query Page**: Centered form (max-width 640px), cultural illustration on side, clear field labels, prominent submit button
+**Artist Dashboard**: Upload zone featured prominently, recent works in 3-col grid, analytics in 4-col stats row
 
-This creates a cohesive, museum-quality digital experience that honors art and culture while providing modern web functionality.
+**Detail Pages**: Centered container (max-w-5xl), large image hero, two-column metadata layout
+
+**Explore**: Left filter sidebar (256px), main gallery grid, sticky filter section headers
+
+This creates a cohesive museum-quality platform that honors art while delivering modern social networking functionality.

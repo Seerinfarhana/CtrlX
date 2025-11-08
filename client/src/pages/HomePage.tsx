@@ -4,12 +4,12 @@ import { TrendingArtists } from "@/components/TrendingArtists";
 import { RoleCard } from "@/components/RoleCard";
 import { MissionSection } from "@/components/MissionSection";
 import { StatsCard } from "@/components/StatsCard";
-import { Palette, Users, Building, Eye, Heart } from "lucide-react";
+import { Palette, Users, Building, Eye, Heart, Sparkles } from "lucide-react";
 import { useLocation } from "wouter";
 
-import abstractArt from "@assets/generated_images/Contemporary_abstract_artwork_sample_6d7353f2.png";
-import portrait from "@assets/generated_images/Classical_portrait_artwork_sample_489c646b.png";
-import sculpture from "@assets/generated_images/Sculpture_artwork_sample_24bc8330.png";
+import abstractArt from "@assets/generated_images/Contemporary_abstract_artwork_sample_721374da.png";
+import portrait from "@assets/generated_images/Classical_portrait_artwork_sample_f641f68f.png";
+import sculpture from "@assets/generated_images/Sculpture_artwork_sample_03515192.png";
 
 export default function HomePage() {
   const [, setLocation] = useLocation();
@@ -20,21 +20,21 @@ export default function HomePage() {
       title: "Contemporary Visions",
       artist: "Maria Santos",
       imageUrl: abstractArt,
-      description: "A stunning exploration of color and form that challenges traditional boundaries.",
+      description: "A stunning exploration of color and form that challenges traditional boundaries and invites viewers into a world of abstract expressionism.",
     },
     {
       id: "2",
       title: "Classical Portrait",
       artist: "Leonardo Rossi",
       imageUrl: portrait,
-      description: "An exquisite oil painting capturing the essence of renaissance portraiture.",
+      description: "An exquisite oil painting capturing the essence of renaissance portraiture with masterful technique and timeless beauty.",
     },
     {
       id: "3",
       title: "Modern Sculpture",
       artist: "Yuki Tanaka",
       imageUrl: sculpture,
-      description: "A contemporary piece blending traditional techniques with modern aesthetics.",
+      description: "A contemporary piece blending traditional techniques with modern aesthetics, creating a dialogue between past and present.",
     },
   ];
 
@@ -65,7 +65,7 @@ export default function HomePage() {
     <div>
       <HeroSection onRoleSelect={(role) => setLocation(`/signup?role=${role}`)} />
 
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-4 gap-6 mb-20" data-testid="section-stats">
             <StatsCard
@@ -100,8 +100,11 @@ export default function HomePage() {
 
           <div className="mb-20">
             <div className="text-center mb-12">
+              <div className="inline-block mb-4">
+                <Sparkles className="w-8 h-8 text-primary mx-auto" />
+              </div>
               <h2 className="font-display text-5xl font-bold mb-4">Featured Artworks</h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Discover our handpicked selection of exceptional works
               </p>
             </div>

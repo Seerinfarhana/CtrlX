@@ -8,6 +8,7 @@ import NotFound from "@/pages/not-found";
 import HomePage from "@/pages/HomePage";
 import ExplorePage from "@/pages/ExplorePage";
 import ArtistsPage from "@/pages/ArtistsPage";
+import ArtistProfilePage from "@/pages/ArtistProfilePage";
 import ContactPage from "@/pages/ContactPage";
 import LoginPage from "@/pages/LoginPage";
 import SignupPage from "@/pages/SignupPage";
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/" component={HomePage} />
       <Route path="/explore" component={ExplorePage} />
       <Route path="/artists" component={ArtistsPage} />
+      <Route path="/artists/:id" component={ArtistProfilePage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/login" component={LoginPage} />
       <Route path="/signup" component={SignupPage} />
