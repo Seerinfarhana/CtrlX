@@ -24,6 +24,7 @@ export function Navbar({ onSearch, isDark = false, onToggleDark }: NavbarProps) 
     { label: "Home", href: "/" },
     { label: "Explore", href: "/explore" },
     { label: "Artists", href: "/artists" },
+    { label: "Dashboard", href: "/dashboard" },
     { label: "Contact", href: "/contact" },
   ];
 

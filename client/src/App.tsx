@@ -9,6 +9,8 @@ import HomePage from "@/pages/HomePage";
 import ExplorePage from "@/pages/ExplorePage";
 import ArtistsPage from "@/pages/ArtistsPage";
 import ArtistProfilePage from "@/pages/ArtistProfilePage";
+import ArtistDashboardPage from "@/pages/ArtistDashboardPage";
+import ArtworkDetailPage from "@/pages/ArtworkDetailPage";
 import ContactPage from "@/pages/ContactPage";
 import LoginPage from "@/pages/LoginPage";
 import SignupPage from "@/pages/SignupPage";
@@ -20,6 +22,8 @@ function Router() {
       <Route path="/explore" component={ExplorePage} />
       <Route path="/artists" component={ArtistsPage} />
       <Route path="/artists/:id" component={ArtistProfilePage} />
+      <Route path="/dashboard" component={ArtistDashboardPage} />
+      <Route path="/artworks/:id" component={ArtworkDetailPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/login" component={LoginPage} />
       <Route path="/signup" component={SignupPage} />
