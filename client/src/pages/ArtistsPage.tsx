@@ -3,8 +3,10 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search } from "lucide-react";
 import { useState } from "react";
+import { useLocation } from "wouter";
 
 export default function ArtistsPage() {
+  const [, setLocation] = useLocation();
   const [searchQuery, setSearchQuery] = useState("");
   const [specialtyFilter, setSpecialtyFilter] = useState("all");
 
@@ -135,7 +137,7 @@ export default function ArtistsPage() {
 
         <TrendingArtists
           artists={filteredArtists}
-          onArtistClick={(id) => console.log("Artist clicked:", id)}
+          onArtistClick={(id) => setLocation(`/artists/${id}`)}
         />
 
         {filteredArtists.length === 0 && (
